@@ -474,7 +474,7 @@ export class I18n {
     }).toLocaleLowerCase();
 
     if (isToday(date)) {
-      return `Today at ${time}`;
+      return time;
     }
 
     if (isYesterday(date)) {
@@ -518,7 +518,7 @@ export class I18n {
     }).toLocaleLowerCase();
 
     if (isToday(date)) {
-      return `Today at ${time}`;
+      return this.translate('date.humanize.today', {time});
     }
 
     if (isTomorrow(date)) {
