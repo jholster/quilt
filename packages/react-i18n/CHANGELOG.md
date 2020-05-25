@@ -11,6 +11,8 @@ and adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 - Updated `I18n#humanizeDate` to humanize today's date as `Today at {time}` [[#1459](https://github.com/Shopify/quilt/pull/1459)]
 
+  Please see the [migration guide](./migration-guide.md) for more information.
+
 ## [3.0.0] - 2020-04-23
 
 ### Changed
