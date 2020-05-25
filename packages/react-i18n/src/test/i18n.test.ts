@@ -1249,7 +1249,7 @@ describe('I18n', () => {
 
           expect(
             i18n.formatDate(moreThanOneHourAgo, {style: DateStyle.Humanize}),
-          ).toBe('5:00 a.m.');
+          ).toBe('Today at 5:00 a.m.');
         });
 
         it('formats a date from yesterday', () => {
@@ -1358,7 +1358,7 @@ describe('I18n', () => {
 
           expect(
             i18n.formatDate(todayInTheFuture, {style: DateStyle.Humanize}),
-          ).toBe('4:00 p.m.');
+          ).toBe('Today at 4:00 p.m.');
         });
 
         it('formats a future date', () => {

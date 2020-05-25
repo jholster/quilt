@@ -474,7 +474,7 @@ export class I18n {
     }).toLocaleLowerCase();
 
     if (isToday(date)) {
-      return time;
+      return `Today at ${time}`;
     }
 
     if (isYesterday(date)) {
@@ -518,7 +518,7 @@ export class I18n {
     }).toLocaleLowerCase();
 
     if (isToday(date)) {
-      return time;
+      return `Today at ${time}`;
     }
 
     if (isTomorrow(date)) {
