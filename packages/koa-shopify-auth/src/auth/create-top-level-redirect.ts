@@ -4,10 +4,10 @@ import {Context} from 'koa';
 
 import redirectionPage from './redirection-page';
 
-export default function createTopLevelRedirect(apiKey: string, path: string) {
+export default function createTopLevelRedirect(apiKey: string, path: string, host?: string) {
   return function topLevelRedirect(ctx: Context) {
-    const {host, query} = ctx;
-    const {shop} = query;
+    host = host || ctx.host;
+    const {shop} = ctx.query;
 
     const params = {shop};
     const queryString = querystring.stringify(params);

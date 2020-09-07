@@ -13,6 +13,7 @@ export interface AuthConfig {
 export interface OAuthStartOptions extends AuthConfig {
   prefix?: string;
   scopes?: string[];
+  redirectHost?: string;
 }
 
 export interface NextFunction {
